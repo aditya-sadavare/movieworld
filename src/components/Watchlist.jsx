@@ -76,11 +76,11 @@ function Watchlist({ watchlist, setWatchlist }) {
         />
       </div>
 
-      <div className="overflow-x-auto rounded border border-gray-400 m-8">
+      <div className="overflow-x-auto rounded border border-gray-400 md:m-8">
         <table className="w-full text-gray-500 text-center">
           <thead className="border-b-8">
             <tr>
-              <th className="px-40 py-2">Name</th>
+              <th className="px-[80px] py-2">Name</th>
               <th className="flex justify-center px-4 py-2">
                 <div className="px-2" onClick={sortAsc}>
                   <i className="fa fa-solid fa-arrow-up"></i>
@@ -120,7 +120,7 @@ function Watchlist({ watchlist, setWatchlist }) {
                       alt={movieObj.original_title}
                       className="h-[15vh] w-[10vh] md:h-[20vh] md:w-[15vh] m-2 bg-center bg-cover rounded-[10px]"
                     />
-                    <div className="flex-grow mx-5">
+                    <div className="flex-grow">
                       {movieObj.original_title}
                     </div>
                   </td>
