@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Watchlist from "./components/Watchlist";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
   }, []);
   return (
     <div>
+      <SpeedInsights/>
       <BrowserRouter>
         <Navbar />
         <Routes>
