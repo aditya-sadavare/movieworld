@@ -25,9 +25,9 @@ function Banner({ movies }) {
           backgroundImage: `url(https://image.tmdb.org/t/p/original/${currentMovie.backdrop_path})`,
         }}
       >
-        <div className=" tex-[5px] text-white md:text-[30px] bg-gray-900/70 w-full text-center p-2">
+        <div className=" text-[5px] text-white md:text-[30px] bg-gray-900/70 w-full text-center p-2">
           {currentMovie.title}
-          <div className="text-[2px] md:text-[20px]">
+          <div className="text-[5px] md:text-[20px]">
             Release Date <br />
             {currentMovie.release_date}
           </div>
