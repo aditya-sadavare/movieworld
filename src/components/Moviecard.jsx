@@ -1,19 +1,24 @@
 import ScrollAnimation from 'react-animate-on-scroll';
+import { watchlistContext } from "./WatchlistContext";
+import { useContext } from "react";
 
 function Moviecard({
   movObj,
   posterPath,
   originalTitle,
   addWatchlist,
-  removeWatchlist,
-  watchlist,
+  removeWatchlist
 }) {
+  var watchlist=useContext(watchlistContext)
+
   function checkWatchlist(movObj) {
     return watchlist.some((movie) => movie.id == movObj.id);
   }
   
 
   var isInWatchlist = checkWatchlist(movObj);
+
+
   return (
     <ScrollAnimation animateIn="fadeIn">
     <div

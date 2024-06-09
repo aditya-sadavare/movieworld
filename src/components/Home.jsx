@@ -4,11 +4,10 @@ import axios from "axios";
 import Banner from "./Banner";
 import Paging from "./Paging";
 
-function Home({addWatchlist,removeWatchlist,watchlist}) {
+function Home({addWatchlist,removeWatchlist}) {
   const [movies, setMovies] = useState([]);
   
   const [page, setPage] = useState(1);
-
   
   function prev() {
     if (page > 1) {
@@ -45,7 +44,6 @@ function Home({addWatchlist,removeWatchlist,watchlist}) {
               movObj={movObj}
               addWatchlist={addWatchlist}
               removeWatchlist={removeWatchlist}
-              watchlist={watchlist}
               key={movObj.id}
             />
           ))}
